@@ -1,6 +1,7 @@
 package com.example.maplocationapps;
 
 import android.content.Context;
+import android.location.Geocoder;
 import android.location.Location;
 import android.os.AsyncTask;
 
@@ -20,6 +21,7 @@ public class GetAddresTask extends AsyncTask<Location, Void, String> {
     }
     @Override
     protected String doInBackground(Location... locations) {
+        Geocoder geocoder = new Geocoder()
         return null;
     }
 }
